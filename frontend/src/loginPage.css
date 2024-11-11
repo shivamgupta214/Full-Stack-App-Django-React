@@ -1,0 +1,87 @@
+/* src/Register.css */
+
+/* Container styles */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Title style */
+.register-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Form styles */
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+/* Input styles */
+.register-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus state */
+.register-form input:focus {
+    border-color: #6c63ff;
+    outline: none;
+}
+
+/* Button styles */
+.register-form button {
+    padding: 10px;
+    background-color: #6c63ff;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-form button:hover {
+    background-color: #5848c2;
+}
+
+/* Message styles */
+.register-message {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #333;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
