@@ -10,7 +10,6 @@ from dotenv import load_dotenv
 load_dotenv()
 genai.configure(api_key=os.environ["API_KEY"])
 
-# api_key = "AIzaSyCnJLpZHuCB_PWd5HFKCrcm5FEuhLrXrwA"
 
 
 PROJECTS = [
