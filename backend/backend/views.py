@@ -8,7 +8,7 @@ import google.generativeai as genai
 import os
 from dotenv import load_dotenv
 load_dotenv()
-genai.configure(api_key=os.environ["API_KEY"])
+
 
 
 
@@ -66,7 +66,7 @@ def genAIcall(request):
 
         prompt = (
         f"Evaluate the following resume text against the given job description and "
-        f"give a compatibility score out of 10 along with reasoning.\n\n"
+        f"give a compatibility score out of 10.\n\n"
         f"--- Job Description ---\n{message}\n\n"
         f"--- Resume ---\n{extracted_text}\n\n"
         f"Score (0-10) and Reasoning:"

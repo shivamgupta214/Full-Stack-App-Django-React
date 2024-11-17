@@ -8,7 +8,7 @@ const Navbar = () => {
             <h1 ><Link to="/">My App</Link></h1>
             <div style={styles.links}>
                 {/* <Link to="/" style={styles.link}>Home</Link> */}
-                <Link to="/resumescorer" style={styles.link}>Login</Link>
+                <Link to="/resumescorer" style={styles.link}>Resume Scorer</Link>
                 <Link to="/portfolio" style={styles.link}>Portfolio</Link>
                 <Link to="/login" style={styles.link}>Login</Link>
             </div>
@@ -23,8 +23,8 @@ const styles = {
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '10px 20px',
-        background: '#333',
-        color: '#fff',
+        background: '#001d36',
+        //color: '#fff',
     },
     title: {
         margin: 0,

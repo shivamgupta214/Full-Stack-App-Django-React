@@ -121,33 +121,64 @@ const HomePage = () => {
         <p style={styles.subtitle}>I build efficient, engaging, and scalable digital solutions.</p>
         
         <nav style={styles.navLinks}>
-          <a href="#about" style={styles.link}>About</a>
+          {/* <a href="#about" style={styles.link}>About</a> */}
           <a href="#experience" style={styles.link}>Experience</a>
-          <a href="#projects" style={styles.link}>Projects</a>
+          {/* <a href="#projects" style={styles.link}>Projects</a> */}
         </nav>
         
         <div style={styles.socialIcons}>
           <a href="https://github.com/yourusername" style={styles.icon}><FaGithub /></a>
-          <a href="https://linkedin.com/in/yourusername" style={styles.icon}><FaLinkedin /></a>
-          <a href="https://instagram.com/yourusername" style={styles.icon}><FaInstagram /></a>
-          <a href="https://twitter.com/yourusername" style={styles.icon}><FaTwitter /></a>
+          <a href="https://linkedin.com/in/shivamgupta214" style={styles.icon}><FaLinkedin /></a>
+          {/* <a href="https://instagram.com/yourusername" style={styles.icon}><FaInstagram /></a>
+          <a href="https://twitter.com/yourusername" style={styles.icon}><FaTwitter /></a> */}
         </div>
       </div>
+
       
       <div style={styles.rightColumn}>
         <p style={styles.description}>
           
-          <br /><br />
-          My main focus now is on creating intuitive user interfaces, and I'm passionate about working on projects where design meets engineering.
-          <br /><br />
+          <br />
+          Dynamic Software Engineer with approximately 4 years of hands-on experience in designing, developing, and deploying robust 
+          software solutions utilizing Python. Proficient in leveraging frameworks such as Django, Flask and Fast API, alongside libraries like Pandas, 
+          NumPy, and TensorFlow, to deliver high-quality applications. Well-versed in Agile, SDLC, and Waterfall methodologies, 
+          demonstrating a solid understanding of project lifecycles. Skilled in building RESTful APIs and creating impactful data visualizations 
+          using Tableau and Power BI. Experienced with cloud platforms including AWS, Azure, and GCP, enhancing application performance 
+          and scalability. Adept in version control systems like Git and GitHub, contributing to 12+ projects to boost team efficiency and 
+          collaboration. Passionate about continuous learning and applying innovative solutions to complex technical challenges. 
+          <br />
           In my free time, I enjoy contributing to open-source projects, exploring new technologies, and participating in coding challenges.
         </p>
+
+        <section id="experience" style={styles.section}>
+        <h2>Experience</h2>
         
-        <p style={styles.date}>2024 — PRESENT</p>
-        <h3 style={styles.jobTitle}>Software Engineer, Humana</h3>
+        <div style={styles.jobContainer}>
+          <h3 style={styles.jobTitle}>Software Engineer, Humana</h3>
+          <p style={styles.date}>September 2023 — PRESENT</p>
+        </div>
         <p style={styles.jobDescription}>
           At Humana, I build efficient systems that streamline processes by integrating modern tech stacks. I collaborate with cross-functional teams to design impactful solutions that improve productivity and user experience.
+        This summary highlights expertise in agile project management, web application development, and data optimization. With experience applying Agile methodologies across 7+ projects, productivity improved by 25%, 
+        achieving 98% adherence to deadlines. Leveraging Python, Django, and SQL, data handling processes were streamlined, reducing query execution time by 30%. Expertise in data processing with Pandas and Matplotlib increased processing speed by 40%, 
+        while development time was reduced by 20%. Real-time interactivity was enhanced through Node.js and WebSockets, paired with React.js, for live updates. Additionally, proficiency in deploying containerized applications on DataBricks with Kubernetes ensured 99.9% uptime, 
+        and Tableau dashboards boosted data-driven decision-making by 40%. Skills in RESTful API development, front-end integration, and database optimization improved application functionality and data retrieval efficiency by 35% and 30%, respectively.
         </p>
+
+        <div style={styles.jobContainer}>
+          <h3 style={styles.jobTitle}>Software Engineer, Streebo</h3>
+          <p style={styles.date}> March 2020 — July 2022</p>
+        </div>
+        <p style={styles.jobDescription}>
+          At Humana, I build efficient systems that streamline processes by integrating modern tech stacks. I collaborate with cross-functional teams to design impactful solutions that improve productivity and user experience.
+        This summary highlights expertise in agile project management, web application development, and data optimization. With experience applying Agile methodologies across 7+ projects, productivity improved by 25%, 
+        achieving 98% adherence to deadlines. Leveraging Python, Django, and SQL, data handling processes were streamlined, reducing query execution time by 30%. Expertise in data processing with Pandas and Matplotlib increased processing speed by 40%, 
+        while development time was reduced by 20%. Real-time interactivity was enhanced through Node.js and WebSockets, paired with React.js, for live updates. Additionally, proficiency in deploying containerized applications on DataBricks with Kubernetes ensured 99.9% uptime, 
+        and Tableau dashboards boosted data-driven decision-making by 40%. Skills in RESTful API development, front-end integration, and database optimization improved application functionality and data retrieval efficiency by 35% and 30%, respectively.
+        </p>
+
+        </section>
+       
       </div>
     </div>
   );
@@ -166,7 +197,6 @@ const styles = {
     flex: 1,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-between',
     paddingRight: '40px',
   },
   name: {
@@ -213,6 +243,12 @@ const styles = {
     fontSize: '1rem',
     lineHeight: '1.6',
     color: '#8892b0',
+  },
+  jobContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center', // Ensures vertical alignment
+    marginTop: '40px',
   },
   date: {
     fontSize: '0.9rem',

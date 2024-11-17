@@ -63,7 +63,7 @@ const ResumeScorer = () => {
         formData.append('file', file);  // Append the file
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/genai/', formData, {
+            const response = await axios.post('http://localhost:8000/api/genai/', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',  // Required for file upload
                 },
