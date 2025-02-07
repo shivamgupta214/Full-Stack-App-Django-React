@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-av7rz!vbw-ae((^p-mk9-3!kzv=xyz!$i-#8z%2w#(&6+x=8of
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -77,13 +77,22 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': os.getenv('DB_NAME', 'newdatabse'),
+    #     'USER': os.getenv('DB_USER', 'root'),
+    #     'PASSWORD': os.getenv('DB_PASSWORD', 'root'),
+    #     'HOST': os.getenv('DB_HOST', 'db'),  # Hostname of the MySQL container
+    #     'PORT': os.getenv('DB_PORT', '3306'),
+    # }
+
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.getenv('DB_NAME', 'newdatabse'),
-        'USER': os.getenv('DB_USER', 'root'),
-        'PASSWORD': os.getenv('DB_PASSWORD', 'root'),
-        'HOST': os.getenv('DB_HOST', 'db'),  # Hostname of the MySQL container
-        'PORT': os.getenv('DB_PORT', '3306'),
+        'NAME': 'newdatabse',
+        'USER': 'root',
+        'PASSWORD': 'root',
+        'HOST': 'localhost',
+        'PORT': '3306', 
     }
 }
 
@@ -121,6 +130,9 @@ USE_TZ = True
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  # React app origin
+]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
@@ -131,3 +143,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

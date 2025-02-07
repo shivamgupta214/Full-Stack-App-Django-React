@@ -1,0 +1,30 @@
+
+.navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: #001d36;
+        flex-direction: row-reverse;
+    }
+.title {
+        margin: 0;
+    }
+.links {
+        display: flex;
+        gap: 15px;
+    }
+.link {
+        color: #fff;
+        text-decoration: none;
+    }
+
+.spotlight {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none; 
+        transition: background 0.2s linear;
+      }
