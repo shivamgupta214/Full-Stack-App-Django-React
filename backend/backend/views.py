@@ -11,7 +11,7 @@ load_dotenv()
 from django.contrib.auth import authenticate, login, logout
 
 
-api_key = "AIzaSyCnJLpZHuCB_PWd5HFKCrcm5FEuhLrXrwA"
+api_key = "Your API KEY"
 genai.configure(api_key = api_key)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
